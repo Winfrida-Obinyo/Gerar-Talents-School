@@ -1,0 +1,148 @@
+.navbar {
+  background-color: #004445;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; /* Ensure positioning context for pseudo-element */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 40px;
+  position: relative;
+}
+
+/* Line pseudo-element for logo */
+.logo::after {
+  content: "";
+  position: absolute;
+  top: -10px; /* Adjust to move the line up */
+  bottom: -150px; /* Adjust to move the line down */
+  right: -20px; /* Adjust as needed */
+  width: 2px; /* Line width */
+  background-color: #fff;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-size: large;
+  font-weight: 1000;
+  position: relative;
+  z-index: 0;
+  margin-left: 180px;
+  
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffd166;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Additional Styles */
+
+.additional-links {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  border-bottom: 2px solid #fff; /* Add border below additional links */
+  margin-bottom: 20px;
+}
+
+.social-media-links {
+  display: flex;
+  list-style: none;
+  margin-left: 120px;
+}
+
+.social-media-links li {
+  margin-right: 10px;
+}
+
+.social-media-links li a {
+  color: #fff;
+}
+
+.additional-nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: 40px;
+  padding-top: 10px;
+}
+
+.additional-nav-links li {
+  margin-left: 53px;
+}
+
+.additional-nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.additional-nav-links li a:hover {
+  color: #ffd166;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #004445;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .additional-links {
+    display: none;
+  }
+}
+
+
+  
+  
+  
+  

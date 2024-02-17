@@ -1,0 +1,38 @@
+.event {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+  h2 {
+    text-align: center;
+    border-bottom: 2px solid #004445;
+    color: #004445;
+    font-size: 40px;
+  }
+  
+  
+  .event h3 {
+    color: #004445;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .event p {
+    color: #004445;
+    font-size: 16px;
+    line-height: 1.6;
+    flex: 2; /* Take up 2/3 of the space */
+  }
+  
+  
+  
+  
